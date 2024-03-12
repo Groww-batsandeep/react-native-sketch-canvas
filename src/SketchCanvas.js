@@ -324,12 +324,7 @@ class SketchCanvas extends React.Component {
     });
   }
 
-  async componentDidMount() {
-    const isStoragePermissionAuthorized = await requestPermissions(
-      this.props.permissionDialogTitle,
-      this.props.permissionDialogMessage
-    );
-  }
+  async componentDidMount() {}
 
   render() {
     return (

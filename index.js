@@ -242,12 +242,7 @@ export default class RNSketchCanvas extends React.Component {
     this._colorChanged = false;
   }
 
-  async componentDidMount() {
-    const isStoragePermissionAuthorized = await requestPermissions(
-      this.props.permissionDialogTitle,
-      this.props.permissionDialogMessage
-    );
-  }
+  async componentDidMount() {}
 
   render() {
     return (
